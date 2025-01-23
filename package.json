@@ -1,0 +1,36 @@
+{
+  "name": "agenticai",
+  "version": "1.0.0",
+  "description": "agentic ai model",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "AI, GPT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivrajkhetri7/agenticai.git"
+  },
+  "keywords": [
+    "AI",
+    "GPT",
+    "AGENTIC",
+    "AI"
+  ],
+  "author": "shivraj khetri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivrajkhetri7/agenticai/issues"
+  },
+  "homepage": "https://github.com/shivrajkhetri7/agenticai#readme",
+  "dependencies": {
+    "@huggingface/inference": "^3.0.0",
+    "@huggingface/transformers": "^3.3.2",
+    "dotenv": "^16.4.7",
+    "google-play-scraper": "^10.0.1",
+    "huggingface": "^1.4.0",
+    "mongoose": "^8.9.5",
+    "openai": "^4.80.0",
+    "readline-sync": "^1.4.10"
+  }
+}

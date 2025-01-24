@@ -9,11 +9,12 @@ dotenv.config();
 
 const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 
-const AppList = ['com.esense.topschool.student', 'com.hurix.navneet.cloudreader']
+const AppList = ['com.esense.topschool.student', 'com.hurix.navneet.cloudreader','com.hurix.navneet.cloudreader']
 
 async function analyzeSentiment(text) {
     const response = await hf.textClassification({
         model: 'distilbert-base-uncased-finetuned-sst-2-english',
+        // model:' tabularisai/multilingual-sentiment-analysis',
         inputs: text,
     });
 

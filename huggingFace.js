@@ -12,6 +12,7 @@ async function main() {
 
     const response = await hf.textGeneration({
         model: 'bigscience/bloom',
+        //model:' tabularisai/multilingual-sentiment-analysis',
         inputs: systemPrompt,
         parameters: { max_length: 200 },
     });

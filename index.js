@@ -11,15 +11,15 @@ const client = new OpenAI({
 async function main() {
 
     // const DB connection
-    const db = await dbConnection();
+    // const db = await dbConnection();
     const models = await client.models.list();
-    console.log('Available Models:', models.data.map(model => model.id));
+    // console.log('Available Models:', models.data.map(model => model.id));
 
     const systemPrompt = await readlineSync.question('>>')
 
     const chatCompletion = await client.chat.completions.create({
         messages: systemPrompt,
-        model: 'gpt-4o-mini-2024-07-18',
+        model: 'gpt-4o-mini',
     });
 
     return chatCompletion;
